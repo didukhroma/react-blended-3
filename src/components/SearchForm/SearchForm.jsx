@@ -7,6 +7,7 @@ export const SearchForm = ({ onSubmit }) => {
 
   const handleOnChange = e => {
     setRegion(e.target.value);
+    // onSubmit(e.target.value);
   };
 
   const handleSubmit = e => {
