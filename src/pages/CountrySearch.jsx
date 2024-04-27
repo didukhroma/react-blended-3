@@ -8,10 +8,14 @@ import {
 } from 'components';
 
 export const CountrySearch = () => {
+  const onSubmit = data => {
+    console.log(data);
+  };
+
   return (
     <Section>
       <Container>
-        <h2>CountrySearch</h2>
+        <SearchForm onSubmit={onSubmit} />
       </Container>
     </Section>
   );
